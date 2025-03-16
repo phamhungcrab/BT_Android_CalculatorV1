@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center">
+
+    <!-- Màn hình hiển thị kết quả -->
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="#D3D3D3"
+        android:gravity="end|center_vertical"
+        android:padding="20dp"
+        android:text="0"
+        android:textStyle="bold"
+        android:textSize="50sp" />
+    <TextView
+        android:id="@+id/tvExpression"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="@android:color/darker_gray"
+        android:gravity="end"
+        android:paddingEnd="16dp"
+        android:paddingTop="8dp"/>
+
+
+    <!-- Các hàng nút bấm -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical">
+
+        <!-- Hàng đầu tiên -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button android:id="@+id/btnCE" android:text="CE" style="@style/CalcButtonOperation"/>
+            <Button android:id="@+id/btnC" android:text="C" style="@style/CalcButtonOperation"/>
+            <Button android:id="@+id/btnBS" android:text="BS" style="@style/CalcButtonOperation"/>
+            <Button android:id="@+id/btnDiv" android:text="/" style="@style/CalcButtonOperation"/>
+        </LinearLayout>
+
+        <!-- Hàng thứ hai -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button android:id="@+id/btn7" android:text="7" style="@style/CalcButtonNumber"/>
+            <Button android:id="@+id/btn8" android:text="8" style="@style/CalcButtonNumber"/>
+            <Button android:id="@+id/btn9" android:text="9" style="@style/CalcButtonNumber"/>
+            <Button android:id="@+id/btnMul" android:text="x" style="@style/CalcButtonOperation"/>
+        </LinearLayout>
+
+        <!-- Hàng thứ ba -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button android:id="@+id/btn4" android:text="4" style="@style/CalcButtonNumber"/>
+            <Button android:id="@+id/btn5" android:text="5" style="@style/CalcButtonNumber"/>
+            <Button android:id="@+id/btn6" android:text="6" style="@style/CalcButtonNumber"/>
+            <Button android:id="@+id/btnSub" android:text="-" style="@style/CalcButtonOperation"/>
+        </LinearLayout>
+
+        <!-- Hàng thứ tư -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button android:id="@+id/btn1" android:text="1" style="@style/CalcButtonNumber"/>
+            <Button android:id="@+id/btn2" android:text="2" style="@style/CalcButtonNumber"/>
+            <Button android:id="@+id/btn3" android:text="3" style="@style/CalcButtonNumber"/>
+            <Button android:id="@+id/btnAdd" android:text="+" style="@style/CalcButtonOperation"/>
+        </LinearLayout>
+
+        <!-- Hàng cuối -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button android:id="@+id/btnSign" android:text="+/-" style="@style/CalcButtonOperation"/>
+            <Button android:id="@+id/btn0" android:text="0" style="@style/CalcButtonNumber"/>
+            <Button android:id="@+id/btnDot" android:text="." style="@style/CalcButtonOperation"/>
+            <Button android:id="@+id/btnEqual" android:text="=" style="@style/CalcButtonOperation"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

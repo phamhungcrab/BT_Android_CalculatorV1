@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CalcButtonNumber">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:background">#FFFFFF</item> <!-- Màu xám nhạt -->
+        <item name="android:shape">rectangle</item>
+    </style>
+
+    <style name="CalcButtonOperation">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:background">#A9A9A9</item> <!-- Màu cam -->
+        <item name="android:shape">rectangle</item>
+    </style>
+</resources>
